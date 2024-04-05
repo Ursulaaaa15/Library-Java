@@ -6,4 +6,4 @@
 Некоторые книги подвергнуты возрастному ограничению. Для каждой арендованной книги храниться дата аренды и возврата, сервис бесплатный.
 
 Модель базы данных:
-![image](https://github.com/Ursulaaaa15/Library-Java/assets/128168213/a387052b-21b6-4817-a689-39b985a25c27)
+![image](https://github.com/Ursulaaaa15/Library-Java/assets/128168213/2cbd29c4-081c-4e68-bf35-7ea234ca7d44)
