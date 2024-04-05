@@ -10,7 +10,8 @@ CREATE TABLE "Book"(
     "id" BIGINT NOT NULL,
     "Author" BIGINT NOT NULL,
     "Year_of_publication" DATE NOT NULL,
-    "Genre" BIGINT NOT NULL
+    "Genre" BIGINT NOT NULL,
+    "Age_limit" INTEGER NOT NULL
 );
 ALTER TABLE
     "Book" ADD PRIMARY KEY("id");
@@ -18,6 +19,8 @@ CREATE INDEX "book_author_index" ON
     "Book"("Author");
 CREATE INDEX "book_genre_index" ON
     "Book"("Genre");
+CREATE INDEX "book_age_limit_index" ON
+    "Book"("Age_limit");
 CREATE TABLE "User"(
     "id" BIGINT NOT NULL,
     "Name" VARCHAR(255) NOT NULL,
