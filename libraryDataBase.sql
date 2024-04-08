@@ -18,9 +18,9 @@ CREATE INDEX author_patronymic_index ON Author(Patronymic);
 
 CREATE TABLE Book (
     id bigserial NOT NULL,
-    Author BIGINT NOT NULL,
+    Author bigserial NOT NULL,
     Year_of_publication DATE NOT NULL,
-    Genre BIGINT NOT NULL,
+    Genre bigserial NOT NULL,
     Age_limit INTEGER NOT NULL,
     PRIMARY KEY (id),
     CONSTRAINT book_author_foreign FOREIGN KEY (Author) REFERENCES Author(id),
@@ -46,8 +46,8 @@ CREATE INDEX user_email_index ON "User"(Email);
 
 CREATE TABLE Orders (
     id bigserial NOT NULL,
-    Book BIGINT NOT NULL,
-    "User" BIGINT NOT NULL,
+    Book bigserial NOT NULL,
+    "User" bigserial NOT NULL,
     Order_date DATE NOT NULL,
     Date_return DATE NOT NULL,
     PRIMARY KEY (id),
@@ -59,4 +59,3 @@ CREATE INDEX orders_book_index ON Orders(Book);
 CREATE INDEX orders_user_index ON Orders("User");
 CREATE INDEX orders_order_date_index ON Orders(Order_date);
 CREATE INDEX orders_date_return_index ON Orders(Date_return);
-
